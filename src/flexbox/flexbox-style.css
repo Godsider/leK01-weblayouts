@@ -1,0 +1,127 @@
+body {
+  background: #d4d4d4;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+#container {
+  margin: 15px auto;
+  display: inline-block;
+  width: 800px;
+  padding: 15px;
+  background: white;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #d4d4d4;  
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 2px solid #d4d4d4;  
+}
+
+.header-cell, .footer-cell, .cell-4, .cell-7 {
+  background: #646464;
+  color: white;
+  text-align: left;
+  padding: 5px;
+}
+
+.cell-1 {
+  flex-basis: 11%;
+}
+
+.cell-2 {
+  flex-basis: 29%;
+}
+
+.cell-3 {
+  flex-basis: 53%;
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+#content-left {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 6px;
+  padding-bottom: 12px; 
+}
+
+.whitespace {
+  flex-basis: 59%;
+  padding-bottom: 12px; 
+}
+
+#content-right {
+  flex-basis: 628px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 6px;
+}
+
+.content-cell {
+  padding-bottom: 12px; 
+}
+
+.content-cell div {
+  background: #d4d4d4;
+  color: black;
+  text-align: left;
+  padding: 5px;  
+}
+
+.cell-5 {
+  flex-basis: 100%;
+}
+
+.cell-6 {
+  flex-basis: 18%;
+}
+
+.cell-8-9 {
+  flex-basis: 49%;
+}
+
+.cell-10 {
+  flex-basis: 31%;
+}
+
+.cell-11 {
+  flex-basis: 32%;
+}
+
+.cell-12-13 {
+  flex-basis: 31%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cell-12 {
+  flex-basis: 41%;
+}
+
+.cell-13 {
+  flex-basis: 41%;
+}
+
