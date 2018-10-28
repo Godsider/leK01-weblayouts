@@ -6,6 +6,14 @@ body {
   line-height: 22px;
 }
 
+* {
+  transition-duration: .2s;
+}
+
+a {
+  color: white;
+}
+
 #container {
   margin: 15px auto;
   display: inline-block;
@@ -71,7 +79,16 @@ body {
 }
 
 .whitespace {
+  padding-bottom: 12px;
+}
+
+.footer-whitespace {
   padding-bottom: 16px;
+}
+
+.whitespace::after {
+  white-space: pre;
+  content: "\A\A\A\A\A\A\A\A\A\A\A\A";
 }
 
 #content-right {
@@ -134,4 +151,306 @@ body {
   padding-top: 6px;
   box-sizing: border-box;
   height: 50%;
+}
+
+@media screen and (min-width: 1125px) {
+
+  #container {
+    margin: 15px auto;
+    display: inline-block;
+    width: 1070px;
+    padding: 15px;
+    background-color: white;
+  }
+
+  .whitespace::after {
+    white-space: pre;
+    content: "\A\A\A\A\A";
+  }
+
+  .cell-6 {
+  width: 14.28%;
+  float: left;
+  }
+  
+}
+
+@media screen and (max-width: 865px) {
+
+  #container {
+    margin: 15px auto;
+    display: inline-block;
+    width: 570px;
+    padding: 15px;
+    background-color: white;
+  }
+
+  .cell-1 {
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 6px 6px 0;
+  }
+
+  .cell-2 {
+    width: 70%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0 6px 6px;
+  }
+
+  .cell-3 {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 6px 0 0 0;
+  }
+
+  .whitespace::after {
+    white-space: pre;
+    content: "\A\A\A\A\A\A\A\A\A\A\A\A\A\A\A\A\A\A\A\A\A\A\A\A\A\A\A\A";
+  }
+
+  .cell-6 {
+    width: 33.33%;
+    float: left;
+  }
+  
+  .cell-8-9 {
+    width: 100%;
+    float: left;
+  }
+
+  .cell-10 {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 6px 6px 0;
+  }
+
+  .cell-11 {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0 6px 6px;
+  }
+
+  .cell-12-13 {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  .cell-12 {
+    width: 50%;
+    padding: 6px 6px 0 0;
+    float: left;
+  }
+
+  .cell-13 {
+    width: 50%;
+    padding: 6px 0 0 6px;
+    float: left;
+    box-sizing: border-box;
+  }
+
+}
+
+@media screen and (max-width: 630px) {
+
+  #container {
+    margin: 15px auto;
+    display: inline-block;
+    width: 450px;
+    padding: 12px 12px 12px 0;
+    background-color: white;
+  }
+
+  #content-left {
+    width: 100%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0 12px 12px;
+  }
+
+  #header {
+    padding-bottom: 12px;
+    margin-left: 12px;
+    border-bottom: 2px solid #d4d4d4;  
+  }
+
+  #footer {
+    padding-top: 12px;
+    margin-left: 12px;
+    border-top: 2px solid #d4d4d4;  
+  }
+
+  .whitespace::after {
+    content: "";
+  }
+
+  #content-right {
+    width: 100%;
+    float: left;
+  }
+  
+  .cell-1 {
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 6px 6px 0;
+  }
+
+  .cell-2 {
+    width: 70%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0 6px 6px;
+  }
+
+  .cell-3 {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 6px 0 0 0;
+  }
+  
+  .cell-6 {
+    width: 33.33%;
+    float: left;
+  }
+  
+  .cell-8-9 {
+    width: 100%;
+    float: left;
+  }
+
+  .cell-10 {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 6px 6px 0;
+  }
+
+  .cell-11 {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0 6px 6px;
+  }
+
+  .cell-12-13 {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  
+}
+
+@media screen and (max-width: 490px) {
+
+  #container {
+    margin: 15px auto;
+    display: inline-block;
+    width: 320px;
+    padding: 12px 12px 12px 0;
+    background-color: white;
+  }
+
+  #content-left {
+    width: 100%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0 12px 12px;
+  }
+
+  #header {
+    padding-bottom: 12px;
+    margin-left: 12px;
+    border-bottom: 2px solid #d4d4d4;  
+  }
+
+  #footer {
+    padding-top: 12px;
+    margin-left: 12px;
+    border-top: 2px solid #d4d4d4;  
+  }
+
+  .whitespace::after {
+    content: "";
+  }
+
+  #content-right {
+    width: 100%;
+    float: left;
+  }
+  
+  .cell-1 {
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 6px 6px 0;
+  }
+
+  .cell-2 {
+    width: 70%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0 6px 6px;
+  }
+
+  .cell-3 {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 6px 0 0 0;
+  }
+  
+  .cell-6 {
+    width: 50%;
+    float: left;
+  }
+  
+  .cell-8-9 {
+    width: 100%;
+    float: left;
+  }
+
+  .cell-10 {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0 6px 0;
+  }
+
+  .cell-11 {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 6px 0;
+  }
+
+  .cell-12-13 {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  .cell-12 {
+    width: 100%;
+    padding: 6px 0;
+    box-sizing: border-box;
+  }
+
+  .cell-13 {
+    width: 100%;
+    padding: 6px 0 0 0;
+    box-sizing: border-box;
+  }
+  
 }

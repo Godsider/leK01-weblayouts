@@ -6,11 +6,19 @@ body {
   line-height: 22px;
 }
 
+* {
+  transition-duration: .2s;
+}
+
+a {
+  color: white;
+}
+
 #container {
   margin: 15px auto;
   display: inline-block;
   width: 800px;
-  padding: 15px;
+  padding: 9px 12px;
   background: white;
 }
 
@@ -18,15 +26,18 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 12px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding-bottom: 6px;
   border-bottom: 2px solid #d4d4d4;  
 }
 
 #footer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 12px;
+  padding-top: 6px;
   border-top: 2px solid #d4d4d4;  
 }
 
@@ -35,6 +46,10 @@ body {
   color: white;
   text-align: left;
   padding: 5px;
+}
+
+.header-cell, .footer-cell {
+  margin: 6px 0;
 }
 
 .cell-1 {
@@ -71,7 +86,7 @@ body {
 }
 
 #content-right {
-  flex-basis: 628px;
+  flex-basis: 80%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -125,3 +140,200 @@ body {
   flex-basis: 41%;
 }
 
+@media screen and (min-width: 1125px) {
+
+  #container {
+    margin: 15px auto;
+    display: inline-block;
+    width: 1070px;
+    padding: 9px 12px;
+    background: white;
+  }
+
+  .cell-6 {
+    flex-basis: 13%;
+  }
+
+  .whitespace {
+    display: none;
+  }
+  
+  .cell-1 {
+    flex-basis: 12%;
+  }
+
+  .cell-2 {
+    flex-basis: 30%;
+  }
+
+  .cell-3 {
+    flex-basis: 53%;
+  }
+
+  .cell-8-9 {
+    flex-basis: 49.3%;
+  }
+
+  .cell-10 {
+    flex-basis: 32%;
+  }
+
+  .cell-11 {
+    flex-basis: 32%;
+  }
+
+  .cell-12-13 {
+    flex-basis: 32%;
+  }
+
+}
+
+@media screen and (max-width: 865px) {
+
+  #container {
+    margin: 15px auto;
+    display: inline-block;
+    width: 570px;
+    padding: 9px 12px;
+    background: white;
+  }
+
+  .cell-1 {
+    flex-basis: 27%;
+  }
+
+  .cell-2 {
+    flex-basis: 67%;
+  }
+
+  .cell-3 {
+    flex-basis: 100%;
+  }
+
+  .cell-6 {
+    flex-basis: 32%;
+  }
+
+  .cell-8-9 {
+    flex-basis: 100%;
+  }
+
+  .cell-10 {
+    flex-basis: 47%;
+  }
+
+  .cell-11 {
+    flex-basis: 47%;
+  }
+
+  .cell-12-13 {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cell-12 {
+    flex-basis: 47%;
+  }
+
+  .cell-13 {
+    flex-basis: 47%;
+  }
+  
+}
+
+@media screen and (max-width: 630px) {
+
+  #container {
+    margin: 15px auto;
+    display: inline-block;
+    width: 450px;
+    padding: 6px 12px;
+    background: white;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+
+  #content-left {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 12px 0; 
+  }
+
+  #content-right {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .cell-1 {
+    flex-basis: 26%;
+  }
+
+  .cell-4 {
+    margin-bottom: 6px;
+  }
+
+  .cell-7 {
+    margin-top: 6px;
+  }
+
+  .cell-10 {
+    flex-basis: 46%;
+  }
+
+  .cell-12 {
+    flex-basis: 46%;
+  }
+  
+}
+
+@media screen and (max-width: 490px) {
+
+  #container {
+    margin: 15px auto;
+    display: inline-block;
+    width: 320px;
+    padding: 6px 12px;
+    background: white;
+  }
+
+  .cell-1 {
+    flex-basis: 24%;
+  }
+
+  .cell-6 {
+    flex-basis: 48%;
+  }
+
+  .whitespace {
+    display: none;
+  }
+ 
+  #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 6px;
+    border-top: 2px solid #d4d4d4;  
+  }
+  
+  .cell-12-13 {
+    flex-basis: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+}
