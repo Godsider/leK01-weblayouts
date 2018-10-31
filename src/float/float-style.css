@@ -22,23 +22,23 @@ a {
   background-color: white;
 }
 
-#header {
+header {
   padding-bottom: 12px;
   border-bottom: 2px solid #d4d4d4;  
 }
 
-#footer {
+footer {
   padding-top: 12px;
   border-top: 2px solid #d4d4d4;  
 }
 
-.clearfix, #header::after, #content::after, .cell-13::after, #footer::after {
+.clearfix, header::after, #content::after, .cell-13::after, footer::after {
   content: "";
   clear: left;
   display: table;
 }
 
-.header-cell, .footer-cell, .cell-4, .cell-7 {
+.header-cell, .footer-cell, nav, .cell-7 {
   background: #646464;
   color: white;
   text-align: left;
@@ -71,7 +71,7 @@ a {
   padding-top: 10px;  
 }
 
-#content-left {
+aside {
   width: 20%;
   height: 100%;
   float: left;
@@ -91,7 +91,7 @@ a {
   content: "\A\A\A\A\A\A\A\A\A\A\A\A";
 }
 
-#content-right {
+section {
   width: 80%;
   float: left;
 }
@@ -267,7 +267,7 @@ a {
     background-color: white;
   }
 
-  #content-left {
+  aside {
     width: 100%;
     height: 100%;
     float: left;
@@ -275,13 +275,13 @@ a {
     padding: 0 0 12px 12px;
   }
 
-  #header {
+  header {
     padding-bottom: 12px;
     margin-left: 12px;
     border-bottom: 2px solid #d4d4d4;  
   }
 
-  #footer {
+  footer {
     padding-top: 12px;
     margin-left: 12px;
     border-top: 2px solid #d4d4d4;  
@@ -291,7 +291,7 @@ a {
     content: "";
   }
 
-  #content-right {
+  section {
     width: 100%;
     float: left;
   }
@@ -360,7 +360,7 @@ a {
     background-color: white;
   }
 
-  #content-left {
+  aside {
     width: 100%;
     height: 100%;
     float: left;
@@ -368,13 +368,13 @@ a {
     padding: 0 0 12px 12px;
   }
 
-  #header {
+  header {
     padding-bottom: 12px;
     margin-left: 12px;
     border-bottom: 2px solid #d4d4d4;  
   }
 
-  #footer {
+  footer {
     padding-top: 12px;
     margin-left: 12px;
     border-top: 2px solid #d4d4d4;  
@@ -384,7 +384,7 @@ a {
     content: "";
   }
 
-  #content-right {
+  section {
     width: 100%;
     float: left;
   }
